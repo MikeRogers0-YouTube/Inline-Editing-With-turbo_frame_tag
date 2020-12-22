@@ -106,6 +106,12 @@ GEM
       raabro (~> 1.4)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hotwire-rails (0.1.0)
+      hotwire-stimulus-rails
+      rails (>= 6.0.0)
+      turbo-rails
+    hotwire-stimulus-rails (0.1.0)
+      rails (>= 6.0.0)
     htmlentities (4.3.4)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
@@ -163,8 +169,6 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     rack (2.2.3)
-    rack-mini-profiler (2.2.0)
-      rack (>= 1.2.0)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -281,6 +285,8 @@ GEM
     statsd-ruby (1.4.0)
     thor (1.0.1)
     tilt (2.0.10)
+    turbo-rails (0.5.0)
+      rails (>= 6.0.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -313,6 +319,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   dotenv-rails (~> 2.7)
   factory_bot_rails
+  hotwire-rails (~> 0.1.0)
   image_processing (~> 1.12)
   letter_opener (~> 1.7)
   letter_opener_web (~> 1.4)
@@ -321,7 +328,6 @@ DEPENDENCIES
   pg (~> 1.1)
   premailer-rails (~> 1.11)
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
   rails (~> 6.1.0)
   redis (~> 4.2)
   rspec-rails (~> 4.0)
