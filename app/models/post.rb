@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  has_many :comments, dependent: :destroy
+
   broadcasts_to ->(post) { :posts }
 
   after_update_commit :update_show

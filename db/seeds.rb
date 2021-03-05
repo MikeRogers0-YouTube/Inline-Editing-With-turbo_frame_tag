@@ -4,4 +4,9 @@
 Post.find_or_create_by(title: 'Sample Title') do |post|
   post.body = "This Body is the best Body of a post"
   post.published_at = Time.zone.now
+
+  post.comments = [
+    Comment.new(body: "Wow, What an amazing post"),
+    Comment.new(body: "This is life changing"),
+  ]
 end

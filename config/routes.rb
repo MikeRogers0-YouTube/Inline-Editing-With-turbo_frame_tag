@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments, only: [:edit, :update]
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   mount Sidekiq::Web => '/sidekiq' if defined?(Sidekiq) && defined?(Sidekiq::Web)

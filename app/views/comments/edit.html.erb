@@ -1,0 +1,8 @@
+<h1>Editing Comment</h1>
+
+<%= turbo_frame_tag dom_id(@comment) do %>
+  <%= render 'form', comment: @comment %>
+<% end %>
+
+<%= link_to 'Show', @comment.post %> |
+<%= link_to 'Back', @comment.post %>

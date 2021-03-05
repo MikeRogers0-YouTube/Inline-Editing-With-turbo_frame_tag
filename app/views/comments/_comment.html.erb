@@ -1,0 +1,9 @@
+<%= turbo_frame_tag dom_id(comment) do %>
+  <blockquote>
+    <%= comment.body %>
+
+    <footer>
+      <%= link_to 'Edit', [:edit, comment.post, comment] %> | <%= l comment.updated_at, format: :long %>
+    </footer>
+  </blockquote>
+<% end %>
